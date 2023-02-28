@@ -1,9 +1,10 @@
 
+import { useWindowContext } from '@/context/WindowContext';
 import Head from 'next/head';
 import React , { } from 'react';
 
 export default function Home() {
-
+const {height} = useWindowContext();
   return (
     <>
       <Head>
@@ -15,6 +16,8 @@ export default function Home() {
 
 
       <h1 className="text-4xl font-bold">PhotosHub</h1>
+
+      <h1 >{height}</h1>
 
     </>
   );
