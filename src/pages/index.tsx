@@ -1,8 +1,19 @@
 
+import { AuthContext } from '@/context/AuthContext';
 import Head from 'next/head';
-import React, { } from 'react';
+import { useRouter } from 'next/router';
+import React, { useContext , useEffect } from 'react';
 
 export default function Home() {
+
+  const { Logout , user } = useContext(AuthContext);
+
+  const router = useRouter();
+
+  useEffect(() => {
+    if(!user?.IsLoggedIn) router.push('/login');
+  }, [user?.IsLoggedIn]);
+  
   return (
     <>
       <Head>
@@ -11,6 +22,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+
+      <div onClick={Logout} className="text-2xl font-bold text-gray-50 bg-red-600 cursor-pointer p-5">
+        Logout 
+      </div>
+
     </>
   );
 };

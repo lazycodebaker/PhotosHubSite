@@ -10,12 +10,18 @@ const AuthContextProvider : React.FC<AuthContextProps> = ({ children }) => {
     
     const Login = (username: string) => {
         setUser({
-            UserId: 1, UserName: username, UserEmail: "", IsLoggedIn: true
+            ...user,
+            IsLoggedIn : true,
         });
+        return;
     };
 
     const Logout = () => {
-        setUser({ UserId: 0, UserName: "", UserEmail: "", IsLoggedIn: false });
+        setUser({
+            ...user,
+            IsLoggedIn : false,
+        });
+        return;
     };
 
     return (

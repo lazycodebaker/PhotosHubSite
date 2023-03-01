@@ -14,8 +14,9 @@ type UseInputReturn = {
     setValue: (value: InputValue) => void;
     handleChange: InputHandler;
     error: string | null;
-    setError : (error : string | null) => void;
+    handleError: (error : string | null) => void;
     hasError : boolean;
+
 };
 
 const useInput = ({ initialValue = "" }: UseInputProps = {}): UseInputReturn => {
@@ -29,12 +30,16 @@ const useInput = ({ initialValue = "" }: UseInputProps = {}): UseInputReturn => 
         setValue(newValue);
     };
 
+    const handleError = (error : string | null) => {
+        setError(error);
+    };
+
     return {
         value,
         setValue,
         handleChange,
         error,
-        setError,
+        handleError,
         hasError
     };
 };
