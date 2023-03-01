@@ -13,11 +13,11 @@ const Register: React.FC<{}> = () => {
 
   const router = useRouter();
 
-  const { Login, user } = useContext(AuthContext);
+  const { Register, user } = useContext(AuthContext);
 
   const handleRegister: MouseEventHandler<HTMLButtonElement> = (e) => {
     e.preventDefault();
-    Login(Username.value);
+    Register(Username.value, Password.value);
   };
 
   useEffect(() => {

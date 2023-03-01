@@ -17,7 +17,7 @@ const Login: React.FC<{}> = () => {
 
   const handleLogin: MouseEventHandler<HTMLButtonElement> = (e) => {
     e.preventDefault();
-    Login(Username.value);
+    Login(Username.value, Password.value);
   };
 
   useEffect(() => {

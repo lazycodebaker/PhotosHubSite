@@ -23,6 +23,7 @@ export type UserType = {
 export type AuthContextType = {
     user: UserType;
     setUser: React.Dispatch<React.SetStateAction<UserType>>;
-    Login: (username: string) => void;
+    Login: (username: string,password:string) => void;
     Logout: () => void;
+    Register : (username: string, password: string) => void;
 };
