@@ -1,7 +1,7 @@
 
 import React, { useContext, createContext, useEffect, useState } from 'react';
 
-import { WindowContextProviderProps, WindowContextType } from '@/Helpers/Types&Interface';
+import { WindowContextProviderProps, WindowContextType } from '@/Types/Types&Interface';
 
 const WindowContext = createContext<WindowContextType>({ width: 0, height: 0 });
 

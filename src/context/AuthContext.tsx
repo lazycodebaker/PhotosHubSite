@@ -1,5 +1,5 @@
 
-import { AuthContextProps, AuthContextType, UserType } from '@/Helpers/Types&Interface';
+import { AuthContextProps, AuthContextType, UserType } from '@/Types/Types&Interface';
 import React, { createContext } from 'react';
 
 
