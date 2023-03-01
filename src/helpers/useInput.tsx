@@ -1,7 +1,7 @@
 
 import { useState, ChangeEvent } from "react";
 
-type InputValue = string | number | boolean;
+type InputValue = string;
 
 type InputHandler = (event: ChangeEvent<HTMLInputElement>) => void;
 
