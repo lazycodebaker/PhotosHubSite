@@ -75,7 +75,7 @@ const Login: React.FC<{}> = () => {
 
                   <button
                     className="mt-3 text-lg font-semibold 
-                        bg-gray-800 w-full text-white rounded-lg
+                        bg-gray-800 w-full text-white rounded-md
                         px-6 py-3 block shadow-xl hover:text-white 
                         hover:bg-gray-900"
                     onClick={handleLogin}
@@ -88,7 +88,7 @@ const Login: React.FC<{}> = () => {
 
                   <button
                     className="mt-3 text-lg font-semibold 
-                        bg-red-800 w-full text-white rounded-lg
+                        bg-red-800 w-full text-white rounded-md
                         px-6 py-3 block shadow-xl hover:text-white 
                         hover:bg-red-900"
                     onClick={() => router.push('/register')}

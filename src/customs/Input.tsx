@@ -28,8 +28,8 @@ export const Input : React.FC<InputProps> = ({label, name, type, placeholder, er
                 onChange={onChange} 
                 value={value}
                 {...props}                
-                className="text-md block px-3 py-2 rounded-lg w-full
-                         bg-gray-50 border-2 border-gray-300 text-gray-900 font-bold
+                className="text-md block px-3 py-2 rounded-md w-full
+                         bg-gray-50 border-2 border-gray-300 text-gray-800 font-bold
                          placeholder-gray-600 shadow-md focus:placeholder-gray-500 
                          focus:bg-gray-50 focus:border-gray-600 focus:outline-none" 
             />
