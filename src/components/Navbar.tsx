@@ -27,14 +27,14 @@ export const Navbar: React.FC = () => {
     return (
         <div className='fixed w-screen py-1 mt-4 rounded-md flex items-center justify-start md:justify-around z-50 shadow-inner '>
 
-            <div className='flex h-full px-3 py-1 bg-black/50 backdrop-blur-md rounded-md'>
+            <div className='flex h-full py-1 bg-black/50 backdrop-blur-md rounded-md px-2'>
 
-                <div className='h-full flex items-center justify-center border-r-[1px] px-1 py-1 border-gray-50/50 '>
-                    <Image src={Logo} alt='Logo' className='rounded-md w-5' />
-                    <h1 className=' px-4 hidden lg:md:block font-bold text-gray-50 text-lg'>PhotosHub</h1>
+                <div className='h-full flex items-center justify-center border-r-[1px] py-1 border-gray-50/50 '>
+                    <Image src={Logo} alt='Logo' className='rounded-md mx-3 ' width={25} height={24} />
+                    <h1 className='pr-2 hidden lg:md:block font-bold text-gray-50 text-lg'>PhotosHub</h1>
                 </div>
 
-                <div className='sm:flex hidden h-full items-center justify-center space-x-2 px-2 sm-px-3'>
+                <div className='sm:flex hidden h-full items-center justify-center space-x-1 px-2'>
 
                     <div className='flex cursor-pointer items-center justify-center px-2 rounded-md py-1 hover:bg-red-600/90'>
                         <h1><FaHome className='text-gray-50/90' /></h1>
@@ -52,7 +52,7 @@ export const Navbar: React.FC = () => {
 
             <div className='flex h-full items-start justify-center'>
 
-                <div className='w-full h-full flex items-center justify-center px-5'>
+                <div className='sm:w-full w-screen h-full flex items-center justify-center px-5'>
                     <div className='items-center h-full w-full flex '>
                         <input value={searchText} onChange={(e) => changeSearch(e)} type='text' className='w-full px-12 mx-4 py-2 font-semibold rounded-md border-none outline-none bg-black/50 backdrop-blur-md text-gray-50/90 placeholder-gray-50/60' placeholder='Search PhotosHub' />
                         <button className='absolute mx-5 w-10 h-10 rounded-md flex items-center justify-center'>

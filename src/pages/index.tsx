@@ -18,7 +18,7 @@ export default function Home() {
       <main>
         <Navbar />
         <img width={"100%"} height={"100%"} className='absolute top-0 left-0 -z-10' 
-        src={"https://th.bing.com/th/id/R.c5ff051f7a0e812ca8d3edf9c80788e9?rik=ZhLXKs3loZCo7Q&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fixhyovg.jpg&ehk=dHiwQ68BhdxeIlvV77xI9Wf2ecNGy4s1ruUHpuFUz20%3d&risl=&pid=ImgRaw&r=0"}
+        src={"https://www.technocrazed.com/wp-content/uploads/2015/12/beautiful-wallpaper-download-15.jpg"}
         alt="random" />
       </main>
 
