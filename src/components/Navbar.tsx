@@ -34,7 +34,7 @@ export const Navbar: React.FC = () => {
                     <h1 className=' px-4 hidden lg:md:block font-bold text-gray-50 text-lg'>PhotosHub</h1>
                 </div>
 
-                <div className='md:lg:flex hidden h-full items-center justify-center space-x-2 px-1'>
+                <div className='md:flex hidden h-full items-center justify-center space-x-2 px-1'>
 
                     <div className='flex cursor-pointer items-center justify-center px-2 py-1 rounded-md hover:bg-red-600/90'>
                         <h1><FaHome className='text-gray-50/90' /></h1>
