@@ -25,7 +25,7 @@ export const Navbar: React.FC = () => {
     }, [searchText]);
 
     return (
-        <div className='fixed w-screen py-1 mt-4 rounded-md flex items-center justify-start md:lg:justify-around z-50 shadow-inner '>
+        <div className='fixed w-screen py-1 mt-4 rounded-md flex items-center justify-start md:justify-around z-50 shadow-inner '>
 
             <div className='flex h-full px-3 py-1 bg-black/50 backdrop-blur-md rounded-md'>
 
@@ -34,7 +34,7 @@ export const Navbar: React.FC = () => {
                     <h1 className=' px-4 hidden lg:md:block font-bold text-gray-50 text-lg'>PhotosHub</h1>
                 </div>
 
-                <div className='md:flex hidden h-full items-center justify-center space-x-2 px-1'>
+                <div className='sm:flex hidden h-full items-center justify-center space-x-2 px-1'>
 
                     <div className='flex cursor-pointer items-center justify-center px-2 py-1 rounded-md hover:bg-red-600/90'>
                         <h1><FaHome className='text-gray-50/90' /></h1>
@@ -65,7 +65,7 @@ export const Navbar: React.FC = () => {
                     <h1 className='text-gray-50 font-semibold text-md'>Join</h1>
                 </div>
 
-                <div className='cursor-pointer items-center justify-center mr-4 md:lg:mr-14 px-6 py-2 md:lg:hidden block rounded-md bg-black/50 backdrop-blur-sm'>
+                <div className='cursor-pointer items-center justify-center mr-4 md:lg:mr-14 px-6 py-2 block sm:hidden rounded-md bg-black/50 backdrop-blur-sm'>
                     <h1 className='text-gray-50 font-semibold text-md'><FaBars size={24} /></h1>
                 </div>
 
