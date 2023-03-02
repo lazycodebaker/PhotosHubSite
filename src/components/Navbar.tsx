@@ -1,5 +1,6 @@
 
 import Image from 'next/image';
+import React, { ChangeEvent, useEffect } from 'react'
 import { useRouter } from 'next/router';
 import Logo from 'public/favicon.ico';
 import { FaSearch, FaHome, FaUser } from 'react-icons/fa';
@@ -7,6 +8,23 @@ import { FaSearch, FaHome, FaUser } from 'react-icons/fa';
 export const Navbar: React.FC = () => {
 
     const router = useRouter();
+
+    const [isSearchFocus, setIsSearchFocus] = React.useState<boolean>(false);
+    const [searchText, setSearchText] = React.useState<string>('');
+
+    const changeSearch: (event: ChangeEvent<HTMLInputElement>) => void = (e) => {
+        setSearchText(e.target.value);
+    };
+
+
+    useEffect(() => {
+        if (searchText.length > 0) {
+            setIsSearchFocus(true);
+        } else {
+            setIsSearchFocus(false);
+        };
+    }, [searchText]);
+
 
     return (
         <div className='fixed w-screen py-1 mt-4 rounded-md flex items-center justify-center md:lg:justify-around z-50 shadow-inner '>
@@ -38,9 +56,9 @@ export const Navbar: React.FC = () => {
 
                 <div className=' w-full h-full flex items-center justify-center px-5'>
                     <div className='items-center h-full w-full flex '>
-                        <input type='text' className='w-full px-12 mx-4 py-2 font-semibold rounded-md border-none outline-none bg-black/50 backdrop-blur-md text-gray-50/90 placeholder-gray-50/60' placeholder='Search PhotosHub' />
+                        <input value={searchText} onChange={(e) => changeSearch(e)} type='text' className='w-full px-12 mx-4 py-2 font-semibold rounded-md border-none outline-none bg-black/50 backdrop-blur-md text-gray-50/90 placeholder-gray-50/60' placeholder='Search PhotosHub' />
                         <button className='absolute mx-5 w-10 h-10 rounded-md flex items-center justify-center'>
-                            <FaSearch className='text-gray-50' />
+                            <FaSearch className={`text-gray-50 ${isSearchFocus ? 'text-red-600/90' : ''}`} />
                         </button>
                     </div>
                 </div>
