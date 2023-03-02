@@ -51,8 +51,7 @@ export const Navbar: React.FC = () => {
             </div>
 
             <div className='flex h-full items-start justify-center'>
-
-                <div className='sm:w-full w-screen px-16 sm:mr-0 mr-4 h-full flex items-center justify-center sm:px-5'>
+                <div className=''>
                     <div className='items-center h-full w-full flex '>
                         <input value={searchText} onChange={(e) => changeSearch(e)} type='text' className='w-full px-12 mx-4 py-2 font-semibold rounded-md border-none outline-none bg-black/50 backdrop-blur-md text-gray-50/90 placeholder-gray-50/60' placeholder='Search PhotosHub' />
                         <button className='absolute mx-5 w-10 h-10 rounded-md flex items-center justify-center'>
