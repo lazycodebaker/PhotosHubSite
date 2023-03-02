@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React, { ChangeEvent, useEffect } from 'react'
 import { useRouter } from 'next/router';
 import Logo from 'public/favicon.ico';
-import { FaSearch, FaHome, FaUser } from 'react-icons/fa';
+import { FaSearch, FaHome, FaUser, FaBars } from 'react-icons/fa';
 
 export const Navbar: React.FC = () => {
 
@@ -16,7 +16,6 @@ export const Navbar: React.FC = () => {
         setSearchText(e.target.value);
     };
 
-
     useEffect(() => {
         if (searchText.length > 0) {
             setIsSearchFocus(true);
@@ -25,9 +24,8 @@ export const Navbar: React.FC = () => {
         };
     }, [searchText]);
 
-
     return (
-        <div className='fixed w-screen py-1 mt-4 rounded-md flex items-center justify-center md:lg:justify-around z-50 shadow-inner '>
+        <div className='fixed w-screen py-1 mt-4 rounded-md flex items-center justify-start md:lg:justify-around z-50 shadow-inner '>
 
             <div className='flex h-full px-3 py-1 bg-black/50 backdrop-blur-md rounded-md'>
 
@@ -54,7 +52,7 @@ export const Navbar: React.FC = () => {
 
             <div className='flex h-full items-start justify-center'>
 
-                <div className=' w-full h-full flex items-center justify-center px-5'>
+                <div className='w-full h-full flex items-center justify-center px-5'>
                     <div className='items-center h-full w-full flex '>
                         <input value={searchText} onChange={(e) => changeSearch(e)} type='text' className='w-full px-12 mx-4 py-2 font-semibold rounded-md border-none outline-none bg-black/50 backdrop-blur-md text-gray-50/90 placeholder-gray-50/60' placeholder='Search PhotosHub' />
                         <button className='absolute mx-5 w-10 h-10 rounded-md flex items-center justify-center'>
@@ -65,6 +63,10 @@ export const Navbar: React.FC = () => {
 
                 <div onClick={() => router.push('/login')} className=' hover:bg-red-600/90 cursor-pointer items-center justify-center mr-4 md:lg:mr-14 px-6 py-2 md:lg:flex hidden rounded-md bg-black/50 backdrop-blur-sm'>
                     <h1 className='text-gray-50 font-semibold text-md'>Join</h1>
+                </div>
+
+                <div className='cursor-pointer items-center justify-center mr-4 md:lg:mr-14 px-6 py-2 md:lg:hidden block rounded-md bg-black/50 backdrop-blur-sm'>
+                    <h1 className='text-gray-50 font-semibold text-md'><FaBars size={24} /></h1>
                 </div>
 
             </div>
