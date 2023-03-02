@@ -29,19 +29,19 @@ export const Navbar: React.FC = () => {
 
             <div className='flex h-full px-3 py-1 bg-black/50 backdrop-blur-md rounded-md'>
 
-                <div className='h-full flex items-center justify-center border-r-[1px] px-1 border-gray-50/50 '>
+                <div className='h-full flex items-center justify-center border-r-[1px] px-1 py-1 border-gray-50/50 '>
                     <Image src={Logo} alt='Logo' className='rounded-md w-5' />
                     <h1 className=' px-4 hidden lg:md:block font-bold text-gray-50 text-lg'>PhotosHub</h1>
                 </div>
 
-                <div className='sm:flex hidden h-full items-center justify-center space-x-2 px-1'>
+                <div className='sm:flex hidden h-full items-center justify-center space-x-2 px-2 sm-px-3'>
 
-                    <div className='flex cursor-pointer items-center justify-center px-2 py-1 rounded-md hover:bg-red-600/90'>
+                    <div className='flex cursor-pointer items-center justify-center px-2 rounded-md py-1 hover:bg-red-600/90'>
                         <h1><FaHome className='text-gray-50/90' /></h1>
                         <h1 className='px-2 text-gray-50/90 font-semibold text-md'>Home</h1>
                     </div>
 
-                    <div className='flex cursor-pointer items-center justify-center px-2 py-1 rounded-md hover:bg-red-600/90'>
+                    <div className='flex cursor-pointer items-center justify-center px-2 rounded-md py-1 hover:bg-red-600/90'>
                         <h1 className=''><FaUser className='text-gray-50/90' /></h1>
                         <h1 className='px-2 text-gray-50/90 font-semibold text-md'>Profile</h1>
                     </div>
