@@ -61,7 +61,7 @@ export const Navbar: React.FC = () => {
                     </div>
                 </div>
 
-                <div onClick={() => router.push('/login')} className=' hover:bg-red-600/90 cursor-pointer items-center justify-center mr-4 md:lg:mr-14 px-6 py-2 md:lg:flex hidden rounded-md bg-black/50 backdrop-blur-sm'>
+                <div onClick={() => router.push('/login')} className=' hover:bg-red-600/90 cursor-pointer items-center justify-center mr-4 md:lg:mr-14 px-6 py-2 sm:flex hidden rounded-md bg-black/50 backdrop-blur-sm'>
                     <h1 className='text-gray-50 font-semibold text-md'>Join</h1>
                 </div>
 
