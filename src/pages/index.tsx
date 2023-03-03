@@ -7,6 +7,9 @@ import { useRouter } from 'next/router';
 import React, { useContext , useEffect } from 'react';
 
 export default function Home() {  
+
+  const image = "https://cdn.wallpaperhub.app/cloudcache/3/e/e/2/2/a/3ee22a464c4eb2183e7816306ca2976bcd541d25.jpg";
+
   return (
     <>
       <Head>
@@ -18,7 +21,7 @@ export default function Home() {
 
       <main>
         <Navbar />
-        <Hero />
+        <Hero image={image} imageId={"1"} subtitle={"Image"} title={"Microsoft"} key={image} />
       </main>
 
     </>
