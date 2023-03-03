@@ -27,9 +27,9 @@ export const Navbar: React.FC = () => {
     return (
         <div className='fixed w-screen py-1 mt-4 rounded-md flex items-center justify-start md:justify-around z-50 shadow-inner '>
 
-            <div className='flex h-full py-1 bg-black/50 backdrop-blur-md rounded-md px-2'>
+            <div className='flex h-full py-1 bg-black/50 backdrop-blur-md rounded-md px-1 mx-2'>
 
-                <div className='h-full flex items-center justify-center border-r-[1px] py-1 border-gray-50/50 '>
+                <div className='h-full flex items-center justify-center border-none  sm:border-r-[1px] py-1 sm:border-gray-50/50 '>
                     <Image src={Logo} alt='Logo' className='rounded-md mx-3 ' width={25} height={24} />
                     <h1 className='pr-2 hidden lg:md:block font-bold text-gray-50 text-lg'>PhotosHub</h1>
                 </div>
