@@ -1,4 +1,5 @@
 
+import { Hero } from '@/components/Hero';
 import { Navbar } from '@/components/Navbar';
 import { AuthContext } from '@/context/AuthContext';
 import Head from 'next/head';
@@ -17,9 +18,7 @@ export default function Home() {
 
       <main>
         <Navbar />
-        <img className='absolute top-0 left-0 -z-10 w-screen h-screen object-cover ' 
-        src={"https://www.technocrazed.com/wp-content/uploads/2015/12/beautiful-wallpaper-download-15.jpg"}
-        alt="random" />
+        <Hero />
       </main>
 
     </>
