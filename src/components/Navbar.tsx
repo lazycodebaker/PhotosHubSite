@@ -65,10 +65,6 @@ export const Navbar: React.FC = () => {
                         <h1 className='text-gray-50 font-semibold text-md'>Join</h1>
                     </div>
 
-                    <div className='cursor-pointer items-center justify-center mr-4 md:lg:mr-14 px-4 py-2 block sm:hidden bars z-50 rounded-md bg-black/50 backdrop-blur-sm'>
-                        <h1 className='text-gray-50 font-semibold text-md'><FaBars size={24} /></h1>
-                    </div>
-
                 </div>
             </div>
 
