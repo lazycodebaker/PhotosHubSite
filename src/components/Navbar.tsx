@@ -51,7 +51,7 @@ export const Navbar: React.FC = () => {
 
                 </div>
 
-                <div className='flex h-full items-start justify-center'>
+                <div className='flex h-full items-center justify-center'>
                     <div className=''>
                         <div className='items-center h-full w-full flex '>
                             <input value={searchText} onChange={(e) => changeSearch(e)} type='text' className='w-full px-12 mx-4 py-2 font-semibold rounded-md border-none outline-none bg-black/50 backdrop-blur-md text-gray-50/90 placeholder-gray-50/60' placeholder='Search PhotosHub' />
@@ -65,32 +65,13 @@ export const Navbar: React.FC = () => {
                         <h1 className='text-gray-50 font-semibold text-md'>Join</h1>
                     </div>
 
-                </div>
-            </div>
-
-            <div className="w-screen items-center justify-center sm:hidden flex">
-
-                <div className="absolute bottom-0 flex mb-6 items-center py-2 bg-black/50 backdrop-blur-md rounded-md px-2 mx-2">
-
-                    <div className='flex h-full items-center justify-center space-x-6 px-2'>
-
-                        <div className='flex cursor-pointer items-center justify-center px-2 rounded-md py-2'>
-                            <FaHome size={"20"} className='text-gray-50 ' />
-                        </div>
-
-                        <div className='flex cursor-pointer items-center justify-center px-2 rounded-md py-2'>
-                            <FaUser size={"20"} className='text-gray-50' />
-                        </div>
-
+                    <div className='py-2 px-3 bg-black/50 sm:hidden block rounded-md cursor-pointer backdrop-blur-md'>
+                        <FaBars className='text-gray-50 ' size={"23"} />
                     </div>
 
+
                 </div>
-
             </div>
-
-
-
-
         </>
     );
 };
