@@ -25,9 +25,9 @@ export const Navbar: React.FC = () => {
     }, [searchText]);
 
     return (
-        <div className='fixed py-1 mt-4 rounded-md flex items-center px-auto w-full z-50 shadow-inner '>
+        <div className='fixed py-1 mt-4 rounded-md flex items-center justify-center w-screen z-50 shadow-inner '>
 
-            <div className='flex h-full py-1 bg-black/50 backdrop-blur-md rounded-md px-1 mx-2'>
+            <div className='flex h-full py-1 bg-black/50 backdrop-blur-md rounded-md px-1 mx-2 sm:md:ml-24'>
 
                 <div className='h-full sm:px-3 flex items-center justify-center md:border-r-[1px] py-1 md:border-gray-50/50 '>
                     <Image src={Logo} alt='Logo' className='rounded-md mx-3 ' width={25} height={24} />
